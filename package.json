@@ -1,0 +1,36 @@
+{
+  "name": "storybook-angular-vite-styles-repro",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "storybook": "ng run my-app:storybook",
+    "test:storybook": "vitest --project=storybook --run",
+    "test:storybook:serve-env": "STORYBOOK_ANGULAR_BUILDER_OPTIONS_JSON='{\"styles\":[\"apps/my-app/src/styles.scss\"]}' vitest --project=storybook --run"
+  },
+  "dependencies": {
+    "@angular/common": "^22.2.0",
+    "@angular/compiler": "^22.2.0",
+    "@angular/core": "^22.2.0",
+    "@angular/platform-browser": "^22.2.0",
+    "rxjs": "~7.8.0",
+    "tslib": "^2.3.0"
+  },
+  "devDependencies": {
+    "@analogjs/vite-plugin-angular": "^2.7.3",
+    "@angular-devkit/architect": "^0.2202.0",
+    "@angular-devkit/build-angular": "^22.2.0",
+    "@angular-devkit/core": "^22.2.0",
+    "@angular/build": "^22.2.6",
+    "@angular/cli": "^22.2.6",
+    "@angular/compiler-cli": "^22.2.0",
+    "@storybook/addon-vitest": "11.0.0-beta.3",
+    "@storybook/angular-vite": "11.0.0-beta.3",
+    "@types/node": "^22.12.0",
+    "@vitest/browser-playwright": "latest",
+    "playwright": "latest",
+    "storybook": "11.0.0-beta.3",
+    "typescript": "~6.0.2",
+    "vite": "latest",
+    "vitest": "latest"
+  }
+}
